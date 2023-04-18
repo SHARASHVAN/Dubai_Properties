@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Real Estate | Dubai Properties</title>
+    <link rel="stylesheet" href="buy.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html"><img src="images/logo_DP2.png" alt="Dubai Properties" /></a>
+        <div class="hamburger">
+          <div class="hamburger__line hamburger__line--top"></div>
+          <div class="hamburger__line hamburger__line--middle"></div>
+          <div class="hamburger__line hamburger__line--bottom"></div>
+        </div>
+        <ul class="menu">
+          <li class="menu__item"><a href="buy.html" class="menu__link">Buy</a></li>
+          <li class="menu__item"><a href="sell.html" class="menu__link">Sell</a></li>
+          <li class="menu__item"><a href="manage.html" class="menu__link">Manage Properties</a></li>
+          <li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+          <li class="menu__item"><a href="signin.html" class="menu__link">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main content -->
+<main class="container">
+    <section class="filters">
+      <h2 class="filters__title">Filter Properties</h2>
+      <div class="filter-group">
+        <label for="property-type">Property Type:</label>
+        <select name="property-type" id="property-type">
+          <option value="">Select Type</option>
+          <option value="apartment">Apartment</option>
+          <option value="villa">Villa</option>
+          <option value="townhouse">Townhouse</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="bedrooms">Bedrooms:</label>
+        <select name="bedrooms" id="bedrooms">
+          <option value="">Select Number</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="bathrooms">Bathrooms:</label>
+        <select name="bathrooms" id="bathrooms">
+          <option value="">Select Number</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="price">Price:</label>
+        <input type="range" id="price" name="price" min="100000" max="10000000" step="10000" value="5000000">
+      </div>
+    </section>
+  
+    <section class="property-list">
+      <div       class="property-box"
+      data-type="apartment"
+      data-bedrooms="2"
+      data-bathrooms="2"
+      data-price="400000"
+    >
+      <div class="property-box__img-container">
+        <img src="images/property1.jpg" alt="Property 1" class="property-box__img" />
+      </div>
+      <h3 class="property-box__title">2 Bedroom Apartment</h3>
+      <p class="property-box__info">
+        <span class="property-box__info--bedrooms">2 Bedrooms</span>
+        <span class="property-box__info--bathrooms">2 Bathrooms</span>
+        <span class="property-box__info--location">Dubai Marina</span>
+      </p>
+      <p class="property-box__price">AED 400,000</p>
+      <p class="property-box__seller">Contact Seller: 050-1234567</p>
+    </div>
+
+    <div
+      class="property-box"
+      data-type="villa"
+      data-bedrooms="5"
+      data-bathrooms="5"
+      data-price="1500000"
+    >
+      <div class="property-box__img-container">
+        <img src="images/property2.jpg" alt="Property 2" class="property-box__img" />
+      </div>
+      <h3 class="property-box__title">5 Bedroom Villa</h3>
+      <p class="property-box__info">
+        <span class="property-box__info--bedrooms">5 Bedrooms</span>
+        <span class="property-box__info--bathrooms">5 Bathrooms</span>
+        <span class="property-box__info--location">Palm Jumeirah</span>
+      </p>
+      <p class="property-box__price">AED 1,500,000</p>
+      <p class="property-box__seller">Contact Seller: 050-7654321</p>
+    </div>
+
+    <div
+      class="property-box"
+      data-type="townhouse"
+      data-bedrooms="3"
+      data-bathrooms="3"
+      data-price="800000"
+    >
+      <div class="property-box__img-container">
+        <img src="images/property3.jpg" alt="Property 3" class="property-box__img" />
+      </div>
+      <h3 class="property-box__title">3 Bedroom Townhouse</h3>
+      <p class="property-box__info">
+        <span class="property-box__info--bedrooms">3 Bedrooms</span>
+        <span class="property-box__info--bathrooms">3 Bathrooms</span>
+        <span class="property-box__info--location">Arabian Ranches</span>
+      </p>
+      <p class="property-box__price">AED 800,000</p>
+      <p class="property-box__seller">Contact Seller: 050-2468101</p>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2 class="reviews__title">Top Reviews</h2>
+    <div class="review">
+      <h3 class="review__title">"Great Property!"</h3>
+      <p class="review__author">- John Smith</p>
+      <p class="review__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis, turpis sed volutpat molestie, magna
+        nisl viverra augue, a ullamcorper felis dolor nec est
+    </p>
+</div>
+<div class="review">
+  <h3 class="review__title">"Amazing Location!"</h3>
+  <p class="review__author">- Sarah Johnson</p>
+  <p class="review__content">
+    Sed tempus eros vel nisl vulputate vestibulum. Integer pharetra semper efficitur. Ut auctor metus sed massa
+    rhoncus, non posuere velit consequat. In hac habitasse platea dictumst. Sed tempor, quam id interdum
+    convallis, lectus mauris tincidunt risus, in elementum nunc purus sed tellus. Donec bibendum nulla eu
+    sagittis pellentesque.
+  </p>
+</div>
+<div class="review">
+  <h3 class="review__title">"Highly Recommended!"</h3>
+  <p class="review__author">- Ali Hassan</p>
+  <p class="review__content">
+    Nam ac velit vel orci bibendum pharetra vel vel ante. Curabitur maximus consectetur orci, quis iaculis
+    lectus. Vivamus vulputate est mi, vel hendrerit leo convallis vitae. Vivamus at nulla sit amet magna
+    malesuada interdum. Quisque consectetur lacus ac massa hendrerit, ut bibendum nibh aliquet. Nulla
+    facilisi. Sed ut enim vel mauris blandit efficitur eget sed justo. Duis id convallis odio. Morbi ac
+    sapien consequat, congue libero id, semper elit. Nam gravida laoreet enim, ac vehicula ante feugiat vel.
+    Nulla facilisi. Cras rutrum vel felis vel fermentum.
+  </p>
+</div>
+</section>
+</main>
+<script src="js/buy.js"></script>
+</body>
+</html>
+  
